@@ -1,0 +1,84 @@
+<div class="main-content-pages">
+<h1 class="pagetitle">Create Tour</h1>
+<br><br><div class="column1-unit-pages">
+<h1>Introduction</h1>
+<p>Any time a new tour types, i.e. daily, monthly, quarterly, is created for a tank farm, or potentially if there is an additional shift created, then there becomes a need to create a new tour in <i>eSOMS</i>. For whatever the reason might be, it is important to fully understand how to properly create a new tour. Follow the steps below to learn how.</p>
+<p>To create a new tour you will need to use the <i>Maintenance</i> tool found under the <i>Operator Rounds</i> dropdown menu.</p>
+<img class="desktop-prtscr-img" src="img/create-tour/dropdown-maintenance.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>When the <i>Maintenance</i> interface has been loaded the window should resemble the screen in the following image. "Right-click" on the tank farm that you want to create a new tour in, and select the <i>Add Tour</i> option.</p>
+<img class="desktop-prtscr-img" src="img/create-tour/create-tour-img1.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p class="hangingindent"><i>Note: If the <b>Add Tour</b> option does not appear after "right clicking" on a tank farm, then you may not have the appropriate permissions set up.</i></p>
+<br><br></div><hr class="clear-contentunit-pages" /><hr class="clear-contentunit-pages" /><div class="column1-unit-pages"><br><br>
+<h1 id="tour-details">Tour Details</h1>
+<p>When the the new tour is added, by default the <i>Tour Detail</i> tab will be open. There are 4 fields in the <i>Tour Detail</i> form which are required when creating a tour: 'Tour Name', 'Tour Type', 'Revision', and a minimum of one shift must be added. For the example a "monthly" round in tank farm 'AZ' will be created. Following the naming convention I have set the value for 'Tour Name' to "TF-OR-MR-AZ", I have input a 'Revision' using the appropriate convention, and I have selected "MONTHLY" from the 'Tour Type' dropdown menu.</p>
+<img class="desktop-prtscr-img" src="img/create-tour/create-tour-img2.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p class="hangingindent"><i>Note: The 'Tour Name' naming scheme is constructed of 4 acronyms: 'TF' stands for tank farm, 'OR' stands for operator rounds, 'MR' stands for monthly rounds, and 'AZ' stands for the specific tank farm which the tour has been created for.</i></p>
+<table><tr><td><p>TF-OR-MR-AZ</p></td></tr></table><br>
+<p>To add a shift you must "click" on the <i>Add shift</i> icon shown in the image below.</p>
+<p>Following convention, the tour 'Revision' begins with the procedure revision number, not to be confused with the 'Rev No.' field which is visible on the same screen as the 'Revision' field, and the 'Revision' ends with the release date.</p>
+<table><tr><td><p>A-1 08/18/2016</p></td></tr></table><br>
+<p>The procedure revision number, known as the <i>Rev-Mod</i>, as well as the <i>Release Date</i> can be found on a <i>Redline</i> file as can be seen in the following image.</p>
+<img class="desktop-prtscr-img" src="img/create-tour/rev-mod-number.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p class="hangingindent"><i>Note: Do <u>not</u> change the 'Frequency' value. Leave it at its default value of "None". It is an unnecessary feature and can lead to complications in specific circumstances.</i></p>
+<p>When the <i>Add shift</i> icon is "clicked" a table will appear where you can set shift attributes. If you "click" on an empty cell in the table, then a dropdown menu with relevant shift values will appear. For this example, "Day" shift has been chosen using the <i>Shift Desc.</i> dropdown menu. The time chosen from the <i>Normal Start Time</i> dropdown menu  is "06:00" , and "Next Day" has been arbitrarily chosen from the <i>Normal Start Day</i> dropdown menu. The <i>Warn Text</i> field has been left with its default message.</p>
+<img class="desktop-prtscr-img" src="img/create-tour/create-tour-img3.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>Though these are the only fields in the <i>Tour Detail</i> tab which are required to have input, there are a couple other fields which will likely need to be set as well. These additional fields include setting the text style for notes and warnings, as well as, setting the color coding scheme for the background of the text. Check the corresponding box to add a font style, or "click" the box next to the color field to open a color palette.</p>
+<img class="desktop-prtscr-img" src="img/create-tour/create-tour-img4.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>The 'History to Download' field is based on the tour type, and the value can be determined using the table below.</p>
+<table cellspacing="0" cellpadding="0"><tr><th><h2>Tour Type</h2></th><th><h2>History to Download</h2></th></tr><tr><td><p>DAILY</p></td><td><p>7 days</p></td></tr><tr><td><p>WEEKLY</p></td><td><p>21 days</p></td></tr><tr><td><p>MONTHLY</p></td><td><p>180 days</p></td></tr><tr><td><p>QUARTERLY</p></td><td><p>365 days</p></td></tr></table>
+<br><br></div><hr class="clear-contentunit-pages" /><hr class="clear-contentunit-pages" /><div class="column1-unit-pages"><br><br>
+<h1 id="data-approval">Data Approval Setup</h1>
+<p>After the <i>Tour Detail</i> form is completed for the new tour you then can "click" on the <i>Data Approval Setup</i> tab to set the appropriate data verifications for the tour.</p>
+<p class="hangingindent"><i>Note: The <i>Attribute Setup</i> has been deliberately skipped. The attributes created in the <i>Attribute Setup</i> must be regenerated for each individual round completed by an operator, and thus have proven to be ineffective and an unnecessary feature in <i>eSOMS</i>. It is recommended to not use <i>Attribute Setup</i>.</i></p>
+<p>When the <i>Data Approval</i> Setup window is initially opened there will be two default verifications already present, one with "Uploaded" as its 'Approval Description' and another with "Approved" as its 'Approval Description'. The default screen will resemble the one in the second image down.</p>
+<p>In addition to these default entries, you will need to create a new entry with "Reviewed" for its 'Approval Description'. This would seem easy enough, but there is a trick to inserting this additional entry. If you simply "click" the <i>Add verification</i> icon, then you will receive the error which is shown in the image below.</p>
+<img class="desktop-prtscr-img" src="img/create-tour/error-data-approval.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>This is a peculiar error for which I cannot fully comprehend, but there is a "work-around". What you must do is change the 'Internal Level' value of the lower-most entry from its current value of "Approved" to any other value. For this particular example I will be changing the value this "Preclude Edit" which is normally used for a “Reviewed” type of verification.</p>
+<img class="desktop-prtscr-img" src="img/create-tour/create-tour-img5.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>Now you can successfully append a new verification entry by "clicking" the <i>Add verification</i> icon near the top-left corner of the window. Because this "new" entry is appended to the bottom of the verifications, and, since the "Approved" must be the last entry, go ahead and manually copy the information from the original "Approved" verification.</p>
+<p>By the current convention, the 'Approval Description' for the "Approved" entry should be changed to "SM Approval", and that is changed by simply selecting the current entry in the field, deleting it, and typing a new value. These verifications should all have the 'Verification Required' field "checked", and the 'Relogin Required' field "checked". Also, make sure that the "Reviewed" entry always has the field 'Reversible To Level' set to 1; this way if there is an operator error, then someone can go back and modify the information. When done, the fields for these three required verifications should resemble those in the following image.</p>
+<img class="desktop-prtscr-img" src="img/create-tour/create-tour-img6.png" alt="" />
+<br><br></div><hr class="clear-contentunit-pages" /><hr class="clear-contentunit-pages" /><div class="column1-unit-pages"><br><br>
+<h1 id="revision-approvals">Revision Approval</h1>
+<p>There are a few more tabs left which allow the user to view revision approval details. There is a <i>Rev Info</i> tab which contains a log of previous revisions that have been made to this specific tour, and there is a <i>Ref Attachments</i> tab which shows attachments for the tour.</p>
+<p>At this point, the new tour is ready for revision approvals which can be found under the <i>Rev Approval</i> tab. A different set of "Approvals" are required for each 'Tour Type', i.e. daily, weekly, monthly, etc. Some sets will require the same approvals, but the sets of approvals are not uniform. Using our example which has a 'Tour Type' set to monthly, we are given a set of approvals similar to the set shown in the image below.</p>
+<img class="desktop-prtscr-img" src="img/create-tour/create-tour-approvals.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>The first approval required is an 'Update' approval. To commit this approval you must first click on the row corresponding to the update approval, so that it is highlighted 'yellow', and then "click" on the <i>Verify</i> stamp as shown in the following image. At every approval there should be a re-login is required, the user will be prompted for their credentials to submit the verification.</p>
+<img class="desktop-prtscr-img" src="img/create-tour/update-approval.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>If you do not see a stamp icon on your screen, then you do not have adequate rights for this action. You may need to find an administrator who has the rights to approve the changes. To learn how to change user or group privileges you can refer to the <a href='manage-rights' target="_blank"><i>Manage Users/Groups</i></a> section of the tutorial.</p>
+<p class="hangingindent"><i>Note: At any stage in the verification process, an approval may be "unverified" by "clicking" the <i>Un-Verify</i> icon which would then require an additional review and a re-verification from the appropriate individual. If a tour edit is necessary, then all approvals must be "unverified".</i></p>
+<p>After the 'Update' approval is verified, it is time for the 'Equation Review' approval. An 'Equation Review' <u>must</u> be completed by <i>eRounds Admin</i>, so you will need to send an email to <a href="mailto:ERADM@rl.gov?subject=eSOMS system support"><i>ERADM@rl.gov</i></a> which should include the tour name, revision number, and a brief description of what is needed.</p>
+<p>If the equations in the tour records are determined to be correct, then <i>Process Software Engineering</i> will verify the approval, otherwise an email will be sent detailing the necessary corrections.</p>
+<p>The 'Manager Review' approval must be verified by either the "Shift Manager" or the "System Administrator", and the 'Release' approval must be verified by either a "Group Administrator" or a "System Administrator". By requiring different people to verify each of the approvals it will ultimately improve the review process by decreasing the probability of errors in the "released" version of the tour.</p>
+<p>At the 'Release' approval, the final verification, the user will be prompted with a pop-up message asking whether the revision should be activated.</p>
+<img class="desktop-prtscr-img" src="img/create-tour/activate-tour.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>By "clicking" <i>Yes</i>, the tour will be automatically taken from the 'Revised' section of the navigation pane, and moved to the 'Active' section of the pane. You will notice in the following image that the revision "A-0-08/18/2016" from tour "TF-OR-MR-AN" is no longer in the 'Revised' section, but is now in the 'Active' section.</p>
+<img class="desktop-prtscr-img" src="img/create-tour/create-tour-active.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p class="hangingindent"><i>Note: You will also notice that there is a copy of the previous revision of the tour being stored in 'Archived'. A record of previous revisions of each tour are automatically saved so that, if there is an error found in the "now-active" version, it is possible to go back to a prior version.</i></p>
+<p>At this point our tour has been created and is "active". Obviously the tour in the example doesn't have any records, or stations, created for it so the tour would not be very effective, but, aside from that, this tour is created and can be uploaded to the <i>Mesa</i> device. How to properly create tour records will be covered in the <a href='create-tour-record'><i>Create Tour Record</i></a> section of the tutorial.   </p>
+<br></div>
+<br></div>

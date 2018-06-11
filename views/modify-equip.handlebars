@@ -1,0 +1,40 @@
+<div class="main-content-pages">
+<h1 class="pagetitle">Modify Equipment</h1>
+<br><br><div class="column1-unit-pages">
+<h1>Introduction</h1>
+<p>Eventually you may need to make some change in an equipment record whether it be a change to the overall format of equipment IDs or location identifiers, or some minor change to a description. Opposed to just deleting the old equipment record, then creating a new record and replacing the values, you can save time by simply updating the existing record. Follow the steps below to learn how to modify an existing equipment record.</p>
+<p class="hangingindent"><i>Note: If there are more than 20 changes to equipment records that need to be made, then you can notify the <b>eRounds Admin</b> at <a href="mailto:ERADM@rl.gov?subject=eSOMS system support">ERADM@rl.gov</a>, and they can handle it.</i></p>
+<br><br></div><hr class="clear-contentunit-pages" /><hr class="clear-contentunit-pages" /><div class="column1-unit-pages"><br><br>
+<h1>Locate Record</h1>
+<p>To modify an equipment record the first step is use one of <i>eSOMS</i> search tools to locate the desired equipment record. You can search for the equipment record using either the <i>Find</i> or <i>Query</i> tools by selecting <i>Search</i> from the <i>Equipment</i> dropdown menu. Detailed instructions for how to search for a specific equipment record using either the <a href='search-equip#using-find' target="_blank"><i>Using Find Tool</i></a> or <a href='search-equip#using-query' target="_blank"><i>Using Query Tool</i></a> sections of this tutorial.</p>
+<p>Let’s say we have a pressure differential indicator in tank farm 'AN' with an equipment ID being 'AN108-WST-PDI-258A', but we need to change the equipment ID while keeping the other remaining attributes the same. We first find the correct equipment record using the search engine and select the entry with the appropriate <i>Equipment ID</i>.</p>
+<img class="desktop-prtscr-img" src="img/modify-equip/modify-find.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>This will return you to the <i>Manage Equipment</i> window of the application with the form populated with the correct equipment record and all of its attributes.</p>
+<img class="desktop-prtscr-img" src="img/modify-equip/modify-equipment1.png" alt="" />
+<br><br></div><hr class="clear-contentunit-pages" /><hr class="clear-contentunit-pages" /><div class="column1-unit-pages"><br><br>
+<h1 id="update-record">Update Record</h1>
+<p>To modify this record simply replace the existing field value with the new desired value, and then “click” the <i>Save</i> icon.</p>
+<img class="desktop-prtscr-img" src="img/modify-equip/modify-equipment2.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p class="hangingindent"><i>Note: There is an auto-save feature on the program that is supposed to save any update to an equipment record without the need for "clicking" the <b>Save</b> icon. I would recommend "clicking" the <b>Save</b> icon just to be safe, that way you are not relying on the precision of this program.</i></p>
+<p>That’s it, the record is updated!</p>
+<p>To confirm that your update has been made simply perform an additional search for the equipment record and see if the intended changes are present.</p>
+<br><br></div><hr class="clear-contentunit-pages" /><hr class="clear-contentunit-pages" /><div class="column1-unit-pages"><br><br>
+<h1 id="undo-change">Undo Changes</h1>
+<p>A useful tool for "undoing" a change made to an equipment record, or just for another way to confirm changes that have been made, is by viewing the <i>Change Log</i>. The <i>Change Log</i> is accessed via the <i>Manage Equipment</i> tool that is selected from the <i>Equipment</i> dropdown menu. When the <i>Manage Equipment</i> interface is open, and the correct equipment record is present, then "click" on the <i>Status</i> tab.</p>
+<img class="desktop-prtscr-img" src="img/modify-equip/modify-changelog.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>The form located in the <i>Status</i> tab includes information on <i>Active Events</i>; for something to appear in <i>Active Events</i>, there must be an operator who is currently conducting a tour, and that tour includes recording a reading from the piece of equipment. An <i>Event History</i> is also included in the form, and this provides details and readings for the equipment record from previously conducted tours.</p>
+<p>To "undo" a change, the <i>Change Log</i> at the bottom of the window is the only thing that is of concern. Taking into account the prior example, you may notice that the most recent entry in the <i>Change Log</i> shows that there has been an alteration to the equipment record. Both the 'Farm' value and the 'Location' value have been changed to "NEW-LOCATION". By default, the <i>Change Log</i> displays entries by date in descending order; if the desired "change" occured prior to the entries in the initial window, then you can simply search for it on another page by "clicking" an alternate page number near the bottom-right corner of the field, or by using one of the arrow icons identified in the previous image.</p>
+<p class="hangingindent"><i>Note: The reason why there are 2 entries created for this particular change is because both the 'Location' and the 'Farm' point to the same value in the database. For your purposes, this just means that the two fields hold the same value, and anytime the 'Location' field is modified, the 'Farm' field will also be modified with an identical value.</i></p>
+<p>To undo the change, simply "copy" the desired value, in this example it would be '241-AN-108', and return to the <i>Detail</i> tab to "paste" this value into the 'Location' field. As recommended, remember to "click" the <i>Save</i> icon before exiting the page.</p>
+<img class="desktop-prtscr-img" src="img/modify-equip/modify-equipment3.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>Now the value stored in the 'Location' field for this specific record has been reverted back to its previous value. This is how to undo an unwanted change to an equipment record. To confirm the change, you can once again return to the <i>Status</i> tab and check the <i>Change Log</i>.</p>
+<br></div>
+<br></div>

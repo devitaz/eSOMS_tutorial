@@ -1,0 +1,161 @@
+<div class="main-content-pages">
+<h1 class="pagetitle">Create Tour Record</h1>
+<br><br><div class="column1-unit-pages">
+<h1>Introduction</h1>
+<p>As new equipment is introduced to a tank farm, or potentially when preexisting equipment is replaced, there may become a need to create a new tour record in <i>eSOMS</i>. These new records come in the form of a <i>Procedure Change Authorization</i> or a <i>Full Revision</i>. Follow the steps below to learn how to create a new tour record.</p>
+<br><br></div><hr class="clear-contentunit-pages" /><hr class="clear-contentunit-pages" /><div class="column1-unit-pages"><br><br>
+<h1>Finding a Record</h1>
+<p>The document in the following image is a <i>Redline</i> file which contains any required tour changes for the corresponding tank farm.</p>
+<img class="desktop-prtscr-img" src="img/create-tour-record/create-record-report1.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>The first step is finding the new record in the <i>Redline</i> file. How to search the file for “redline” changes is discussed in the <a href='modify-tour-record#nav-redline-file' target="_blank"><i>Navigating Redline File</i></a> section of this tutorial. Please refer to this section if you have any trouble finding the “redline” changes in the document or for search tips.</p>
+<p>For the example we find an entry in <i>B Farm</i> for the “AN Quarterly Rounds” where the entire record is a new “redline” in the report.</p>
+<img class="desktop-prtscr-img" src="img/create-tour-record/create-record-report2.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>Once you determine that a new record must be made you need to open <i>eSOMS</i>.</p>
+<br><br></div><hr class="clear-contentunit-pages" /><hr class="clear-contentunit-pages" /><div class="column1-unit-pages"><br><br>
+<h1>eSOMS Interface</h1>
+<p>To create this tour record in <i>eSOMS</i> you will need to select the <i>Maintenance</i> tool found under the <i>dropdown</i> menu.</p>
+<img class="desktop-prtscr-img" src="img/create-tour-record/create-record-img1.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>When the <i>Maintenance</i> tool has been loaded the window should resemble the screen in the following image. For our example, remember that you are using the “AN Quarterly Rounds” tour for the necessary changes.</p>
+<img class="desktop-prtscr-img" src="img/create-tour-record/create-record-img2.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>In order to create a new tour record in the “AN Quarterly Rounds”, also referred to by “TF-OR-QR-AN”, there needs to be a copy of the current revision to that tour in the <i>Revised</i> “collapsible” menu which can be found in the navigation pane on the left-hand side of the window. If you find that there is a copy of the revision in the <i>Active</i> “collapsible” menu but not in the <i>Revised</i> “collapsible” menu, then you will need to expand the tour so that the last revision is visible, then “right-click” on that revision and select the <i>Revise Tour</i> option.</p>
+<p class="hangingindent"><i>Note: If the <b>Revise Tour</b> option is not available, then you may not have the appropriate rights to complete this action. How to modify rights is covered in the <a href='manage-rights#add-remove-rights' target="_blank"><i>Add/Remove Rights</i></a> section of this tutorial.</i></p>
+<img class="desktop-prtscr-img" src="img/create-tour-record/create-record-img3.png" alt="" />
+<br><br></div><hr class="clear-contentunit-pages" /><hr class="clear-contentunit-pages" /><div class="column1-unit-pages"><br><br>
+<h1 id="insert-record">Insert Record</h1>
+<p>With “TF-OR-QR-AN” now in the <i>Revised</i> menu you can expand the current revision to view the tour’s list of station records as shown in the following image. With the list of records present you can choose where to insert the new record by “right clicking” in the appropriate location and selecting <i>Insert Record</i> from the dropdown menu.</p>
+<img class="desktop-prtscr-img" src="img/create-tour-record/create-record-img4.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>Because the tour record being created involves a “Level Indicator” sensor and is located in the <i>B Farm</i>, I have chosen to create the record next to similar <i>SACS</i> records. This way the record’s sequence number will be close, if not in, the correct location. A <i>Field Reading</i> station would also need to made for this particular piece of equipment, but for the example, only the <i>SACS</i> record entry will be shown.</p>
+<p class="hangingindent"><i>Note: The order that a station shows up on the handheld <i>Mesa</i> device directly correlates to its sequence number, and the sequence number is automatically determined based on a record's order in this list.</i></p>
+<img class="desktop-prtscr-img" src="img/create-tour-record/create-record-img5.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p class="hangingindent"><i>Note: If it is later determined that the record’s sequence number needs to be changed, then it is as simple as “dragging & dropping” the record to the desired location, and the sequence number will automatically update to reflect its new location.</i></p>
+<p>After a new tour record has been inserted and is in the correct location, the details for the record, including the applicability, expressions, alerts, notes, etc. will still need to be set up.</p>
+<br><br></div><hr class="clear-contentunit-pages" /><hr class="clear-contentunit-pages" /><div class="column1-unit-pages"><br><br>
+<h1 id="record-detail">Record Detail</h1>
+<p>With the new record inserted and selected, the default form located in the <i>Rec. Detail</i> tab should be visible. Most of this form can be filled directly from the information from the <i>Redline</i> file.</p>
+<img class="desktop-prtscr-img" src="img/create-tour-record/create-record-img6.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>The ‘Equipment ID’, ‘Min’, ‘Max’, ‘Short Instr.’, and ‘Long Instruction’ fields can each be filled via the <i>Redline</i> file. The ‘Long Instruction’ contains the “Preventative Maintenance” number, as well as, the “BASIS”, “SEC” and “OSD” numbers as applicable. The “Special Instructions” from the <i>Redline</i> file go into the ‘Short Instr.’ field in <i>eSOMS</i>.</p>
+<p>If, after entering the equipment ID, you receive an error resembling the error in the following image then there is currently not an equipment record that matches the equipment ID entered.</p>
+<img class="desktop-prtscr-img" src="img/create-tour-record/create-record-error.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>If you are not certain of the equipment ID, and what you had entered was just a guess, then “click” <i>OK</i> to search for the correct equipment ID. Otherwise this error likely means that there is no equipment record associated with the equipment ID, and that a new equipment record needs to be made in addition. In this case, create the new equipment record prior to entering the equipment ID in the <i>Rec. Detail</i> form to prevent this error. How to create a new equipment record is covered in the <a href='manage-equip#add-equip' target="_blank"><i>Add Equipment</i></a> section of this tutorial.</p>
+<p>The ‘Description’ field can be filled using the equipment ID and by following the standard convention. So, where…</p>
+<table><tr><td><p>B109-WST-LIT-101</p></td></tr></table><br>
+<p>becomes…</p>
+<table><tr><td><p>B-109 Level Indicator SACS</p></td></tr></table><br>
+<p class="hangingindent"><i>Note: A new tour record for the <i>Field Reading</i> would end with “FR” opposed to “SACS”.</i></p>
+<p>The ‘Units’ field must also be filled. The units will be indicated on the <i>Redline</i> file. The following table displays a list of the common units used by <i>eSOMS</i>, and it shows how each unit needs to be represented in the field.</p>
+<table cellspacing="0" cellpadding="0"><tr><th><h2>Unit</h2></th><th><h2>Quantity</h2></th></tr><tr><td><p>%</p></td><td><p>Percent</p></td></tr><tr><td><p>CFM or ft3/min</p></td><td><p>Cubic Feet per Minute</p></td></tr><tr><td><p>CLD/NOT</p></td><td><p>Closed/Not Closed</p></td></tr><tr><td><p>DPM/FT3</p></td><td><p>Disintegrations per Minute by Volume</p></td></tr><tr><td><p>F</p></td><td><p>Temperature in Fahrenheit</p></td></tr><tr><td><p>FPM</p></td><td><p>Feet per Minute</p></td></tr><tr><td><p>g</p></td><td><p>Gallons</p></td></tr><tr><td><p>in</p></td><td><p>Inches</p></td></tr><tr><td><p>in WG</p></td><td><p>Inches in Water Gauge (Unit of Pressure)</p></td></tr><tr><td><p>in WG VAC</p></td><td><p>Inches in Water Gauge Vacuum (Unit of Pressure)</p></td></tr><tr><td><p>psi</p></td><td><p>Pounds per Square Inch</p></td></tr><tr><td><p>SAT/OFF</p></td><td><p>Satisfactory/Off</p></td></tr><tr><td><p>SAT/UN</p></td><td><p>Satisfactory/Unsatisfactory</p></td></tr><tr><td><p>SCFM</p></td><td><p>Standard Cubic Feet per Minute</p></td></tr></table><br>
+<p class="hangingindent"><i>Note: It is important to match these acronyms exactly, in case and without using any glyphs (periods) at the end of the acronym. This is necessary because “units” are utilized in searches via the database and thus must have a uniform format.</i></p>
+<br><br></div><hr class="clear-contentunit-pages" /><hr class="clear-contentunit-pages" /><div class="column1-unit-pages"><br><br>
+<h1 id="applicability">Applicability</h1>
+<p>After the record details have been set “click” on the <i>Applicability</i> tab. The applicability settings are fairly straight-forward. Leave the ‘Day of the Week’ field as the default with every day highlighted. <u>Always</u> uncheck the <i>Applicable</i> checkbox for the “Temp” shift. When completed, <i>Applicability</i> tab should resemble the window in the following image.</p>
+<img class="desktop-prtscr-img" src="img/create-tour-record/create-record-img7.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<h1 id="expressions">Expressions</h1>
+<p>After you have finished setting the “Applicability” for a tour record you can “click” on the <i>Expressions</i> tab. The equations which go into an “Expression” are not very intuitive so you may find setting up the equations to be difficult. </p>
+<p>If you are having difficulty setting up the equations you can refer to the <i>Create Record Expressions</i> documentation in the <i>eSOMS Page Help Menu</i> or you can always contact <a href="mailto:ERADM@rl.gov?subject=eSOMS system support"><i><strong>eRounds Admin</strong></i></a>. You access the <i>eSOMS Page Help Menu</i> by “clicking” the <i>Help</i> button from the <i>eSOMS</i> dropdown menu-bar. 
+</p>
+<p class="hangingindent"><i>Note: Make sure you “click” on the actual <i>Help</i> button and not the <i>About</i> item from the dropdown menu.</i></p>
+<img class="desktop-prtscr-img" src="img/create-tour-record/create-record-img8.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>Then “click” on the <i>Create Record Expressions</i> hyperlink to view the vendor documentation.</p>
+<img class="desktop-prtscr-img" src="img/create-tour-record/create-record-img9.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>These “Expressions” must also be approved by <i>eRounds Admin</i> before any updates to a tour can take effect so, even if the equations are incorrect, the mistake will be caught during the “approval” process.</p>
+<p>Only the <i>Reading Expression</i> and the <i>Applicability Expression</i> fields are relevant for your purposes, so simply ignore the remaining expression fields.</p>
+<p>The <i>Applicability Expression</i> determines whether or not a station is necessary to take a reading from, whether or not it even shows up on the handheld device. If input from a station is only required depending on the result of the <i>Reading Expression</i> from another station, then the first station would need an <i>Applicability Expression</i>. </p>
+<p>An example of this might be that a reading from “Station A” is necessary if the <i>Reading Expression</i> from “Station B” results in a “True” statement. This is a very common use of the <i>Applicability Expression</i>. Let’s say that STA(277) has the following <i>Applicability Expression</i>.</p>
+<img class="desktop-prtscr-img" src="img/create-tour-record/create-record-img17.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>This equation means that the station is only applicable when the <i>Reading Expression</i> from STA(512) results in a “True”; a value of "YES" is equivalent to a result being "True". Let’s take a look at the <i>Reading Expression</i> from STA(512).</p>
+<img class="desktop-prtscr-img" src="img/create-tour-record/create-record-img18.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>A <i>Reading Expression</i> differs from an <i>Applicability Expression</i> because it looks directly at the tour readings taken by the operator opposed to the result of another station’s <i>Reading Expression</i>.</p>
+<p>The <i>Reading Expression</i> from STA(512) literally translates to:</p>
+<table><tr><td><p><b>If</b> the reading from <b>STA(263)</b> is <b>“ON”</b><br>and the reading from <b>STA(275)</b> is not <b> “O/S”</b><br>and the reading from <b>STA(276)</b> is not <b> “O/S”</b><br>and the reading from <b>STA(122)</b> is <b>“ON”</b><br>then the result is <b>”YES”</b><br>otherwise the result is <b>”NO”</b></p></td></tr></table><br>
+<p>If whether or not a station is required depends on another station’s <i>Reading Expression</i>, then an equation needs to be created for the <i>Applicability Expression</i>. If whether or not a station is required depends on another stations’ readings, then an equation needs to be created for the <i>Reading Expression</i>.</p>
+<p>Another equation which is common in a <i>Reading Expression</i> is the following... </p>
+<table><tr><td><p>N(STA(268)) + N(STA(269))</p></td></tr></table><br>
+<p>For this equation it is important to understand that, in a conditional statement, a result which is greater than “0” is equivalent to “True”. It is also important to know that the “N” with parenthesis surrounding the station returns a numerical value for the reading taken at the specified station.</p>
+<p>With that in mind, the statement literally translates to:</p>
+<table><tr><td><p>the numerical reading from <b>STA(268)   + </b><br>the numerical reading from <b>STA(269)</b></p></td></tr></table><br>
+<p>If this value results in a positive value, i.e. the value at STA(268) is greater than the value at STA(269), then the equation results in a “True”.</p>
+<p class="hangingindent"><i>Note: Make sure to “click” the <i>Save</i> icon when finished to ensure your progress is saved.</i></p>
+<br><br></div><hr class="clear-contentunit-pages" /><hr class="clear-contentunit-pages" /><div class="column1-unit-pages"><br><br>
+<h1 id="alerts">Alerts</h1>
+<p>After you have finished setting the “Expressions” for a tour record you can “click” on the <i>Alerts</i> tab. “Alerts” are messages received by the operator that are based on a particular value, i.e. UNSAT, ON, OFF, or can be based on a reading being “Out of Spec”.</p>
+<p>To create a new “Alert” you must “click” on the <i>New record</i> icon near the top left corner of the window.</p>
+<img class="desktop-prtscr-img" src="img/create-tour-record/create-record-img10.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>When the <i>New record</i> icon is “clicked” then a new row will be created in the table with three blank fields.</p>
+<img class="desktop-prtscr-img" src="img/create-tour-record/create-record-img11.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>Both the <i>Description</i> column and the <i>Alert Text</i> column will appear on the <i>Mesa</i> handheld device. This should be taken into consideration when entering data into the fields. If the text from the field fits onto the screen of the device without the user needing to “scroll” down, then it is much more convenient for the user to read the entire message. The image below shows an alert on the <i>Mesa</i> and should give you an idea of how much space is allotted for the text to be visible without scrolling.</p>
+<img class="desktop-prtscr-img" src="img/create-tour-record/create-record-mesa1.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>Similar to the “Alert” in the above image, the “Description” should be a simple and short phrase describing the nature of the “Alert”, while the “Alert Text” is intended to give more specific details pertaining to the “Description”.</p>
+<p>The <i>Expression</i> column is intended for the equation which triggers the “Alert”. The “Expression” in the image above literally translates as: </p>
+<table><tr><td><p>Rdinfo(1, 0,”SPEC”)=”YES”</p></td></tr><tr><td><p>if the reading from <b>STA(1)</b> is <b>Out of SPEC</b><br>then the equation results in <b>”YES”</b></p></td></tr></table><br>
+<p class="hangingindent"><i>Note: I would recommend to find an “Expression” that already exists in another tour record that is triggered for the same reason, and use its “Alert” table values to help write your own.</i></p>
+<p>A second example is shown in the image below.</p>
+<img class="desktop-prtscr-img" src="img/create-tour-record/create-record-img12.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>The “Expression” used in this example is much more straight forward, and the logic is coherent.</p>
+<p>This “Expression” literally translates as:</p>
+<table><tr><td><p>STA(263)="OFF" AND STA(262)="OFF"</p></td></tr><tr><td><p>if the reading from <b>STA(263)</b> is <b>"OFF"</b><br>and the reading from <b>STA(262)</b> is <b>"OFF"</b><br>then the equation results in “True”</p></td></tr></table><br>
+<p class="hangingindent"><i>Note: Make sure to “click” the <i>Save</i> icon when finished to ensure your progress is saved.</i></p>
+<br><br></div><hr class="clear-contentunit-pages" /><hr class="clear-contentunit-pages" /><div class="column1-unit-pages"><br><br>
+<h1 id="std-reading-note">Standard Reading/Note</h1>
+<p>After you have finished setting the “Alerts” for a tour record you can “click” on the <i>Std Reading/Note</i> tab. This section is used to create a list of commonly entered readings and notes for the operator to use. This helps to create uniform responses to “Alerts”, and it should make it much easier to interpret the readings that were taken during a tour.</p>
+<p>To add one of these common readings to the table you need to “click” on the <i>New record</i> icon in the top left corner of the ‘Standard Reading’ field.</p>
+<img class="desktop-prtscr-img" src="img/create-tour-record/create-record-img13.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>Every tour should have one or more “common” readings created. The choice of common readings should depend on the nature of the record. For example, the only options for an exhauster reading are “ON”, “OFF”, or “O/S” (out of service). Not only are these same options the same for all exhausters, but some of the individual options are utilized for many other tour records so why not store these answers so that the operators can save time recording their readings. The readings for many records require a numeric value, but, if the sensor for the record is inoperable or temporarily decommissioned, then there needs to be a common reading for those cases.</p>
+<p>The table below shows some of the commonly used readings.</p>
+<table><tr><td><p>ON</p></td><td><p>Equipment is "ON"</p></td></tr><tr><td><p>OFF</p></td><td><p>Equipment is "OFF"</p></td></tr><tr><td><p>SAT</p></td><td><p>Reading is "Satisfactory"</p></td></tr><tr><td><p>UNSAT</p></td><td><p>Reading is "Unsatisfactory"</p></td></tr><tr><td><p>O/S</p></td><td><p>Equipment is "Out of Service"</p></td></tr><tr><td><p>N/A</p></td><td><p>Reading is "Not Applicable"</p></td></tr></table><br>
+<p>The column in the “Standard Reading” table titled <i>OOS Setting</i>, “OOS” meaning “Out of SPEC”, determines if the operator will be required to attach a note to the reading. If the <i>OOS Setting</i> is set to “Always OOS”, then the operator will be directed to the <i>Note</i> tab on their <i>Mesa</i> and will be required to select a note before moving to the next station. If the <i>OOS Setting</i> is set to “Never OOS”, then the operator will not be taken to the <i>Note</i> tab on their <i>Mesa</i>, and they will not be required to submit a note.</p>
+<img class="desktop-prtscr-img" src="img/create-tour-record/create-record-img14.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p class="hangingindent"><i>Note: The “Check for OOS” option should not be used. It provides the same functionality as the “Never OOS” option where the operator has an option to enter a note, but taking a note is not required. </i></p>
+<p>The <i>Validated</i> checkbox is important to “check” for stations where a reading must be chosen from one of the “common” readings. An exhauster is an excellent example of this.</p>
+<img class="desktop-prtscr-img" src="img/create-tour-record/create-record-img15.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>An exhauster will never have a numeric value recorded; the reading must be either “ON”, “OFF” or “Out of Service”.</p>
+<p>Similar to the standard readings’ table, there should generally be one or more notes included for a station. The notes are used to standardize operator responses for “Out of SPEC” readings. Some ranges of numeric values for a reading, as well as, some of the stored common readings require a note. To add a note “click” on the <i>New record</i> icon in the top left corner of the ‘Note’ field.</p>
+<img class="desktop-prtscr-img" src="img/create-tour-record/create-record-img16.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>The table below shows the common notes used on site.</p>
+<table cellspacing="0" cellpadding="0"><tr><th><h2>Note Description</h2></th><th><h2>Note Text</h2></th></tr><tr><td><p>Equipment RATL</p></td><td><p>E-RATL:  #</p></td></tr><tr><td><p>Facility RATL</p></td><td><p>F-RATL:  *</p></td></tr><tr><td><p>Caustic Add in Progress</p></td><td><p>Caustic Add in Progress.</p></td></tr><tr><td><p>PCM O/S, HVAC SAT</p></td><td><p>PCM O/S, HVAC SAT.</p></td></tr><tr><td><p>PCM SAT, HVAC O/S</p></td><td><p>PCM SAT, HVAC O/S.</p></td></tr><tr><td><p>Transfer in Progress</p></td><td><p>Transfer in Progress.</p></td></tr><tr><td><p>No Entry</p></td><td><p>Farm Access Waived Per SOM</p></td></tr></table><br>
+<p>Both the “E-RATL:  #” and the “F-RATL:  *” have a space in the ‘Note Text’ where the operator is required to enter their corresponding equipment ID or location.</p>
+<p class="hangingindent"><i>Note: It is important to note the difference between the “E-RATL:  #” and “F-RATL:  *”. The ‘Note Text’ for the “E-RATL:  #” requires the equipment ID to follow the “#” symbol, while the “F-RATL:  *” requires the location to follow the “*” symbol. This is necessary for the database to function properly.</i></p>
+<p>As always, make sure to “click” the <i>Save</i> icon when finished to ensure your progress is saved.</p>
+<br></div>
+<br></div>

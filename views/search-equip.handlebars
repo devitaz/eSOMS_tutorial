@@ -1,0 +1,140 @@
+<div class="main-content-pages">
+<h1 class="pagetitle">Search Equipment</h1>
+<br><br><div class="column1-unit-pages">
+<h1>Introduction</h1>
+<p>There are two tools that can be used to search the database for specific pieces of equipment on the <i>eSOMS</i> web application. The first tool which will be discussed is the <i>Find</i> tool, followed by the <i>Query</i> tool. The <i>Find</i> method of searching has many similarities to the standard search tools found on most websites or on a search engine so much of the functionality should come naturally, but there are a few key quirks which you may find unique to this particular search engine. Follow the steps below to learn how to effectively use the <i>Find</i> tool when searching for equipment.</p>
+<br><br></div><hr class="clear-contentunit-pages" /><hr class="clear-contentunit-pages" /><div class="column1-unit-pages"><br><br>
+<h1 id="using-find">Using <i>Find</i> Tool</h1>
+<p>To search for equipment using the <i>Find</i> tool, select the <i>Search</i> option in the <i>Equipment</i> dropdown menu.</p>
+<img class="desktop-prtscr-img" src="img/find-equip/dropdown-search.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>The <i>Find</i> search tool is the page’s default tab so it should be automatically loaded when <i>Search</i> is selected. The form on the page will include a field for each of the different equipment attributes.</p>
+<img class="desktop-prtscr-img" src="img/find-equip/find-img3.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p class="hangingindent"><i>Note: It is important to note that both 'Equipment ID' and 'ID', as well as, 'Farm' and 'Location' provide the same function as one-another, and produce the exact same search results. The only difference between them is that the latter of each pair allows the user to enter lower-case letters. Since there are absolutely <b><u>NO</u></b> lower-case letters used for equipment IDs or locations, I would suggest only using the 'Equipment ID' and 'Farm' fields and to disregard the 'ID' and 'Location' fields.</i></p>
+<br><br></div><hr class="clear-contentunit-pages" /><hr class="clear-contentunit-pages" /><div class="column1-unit-pages"><br><br>
+<h1 id="wildcard-notation">Wildcard Notation</h1>
+<p>The most foreign feature of this search engine would be the usage of a "wildcard" notation, a feature which is commonly used in database queries. Though it may seem unusual at first, once you understand how to use the 'wildcard' notation you will save yourself a great deal of both time and frustration.</p>
+<p>Let’s say you are searching for an actively used, 'thermocouple tree' which is located in the 'AP' tank farm on tank number '106'. Utilizing this information and by using the standard naming convention equipment IDs, you can determine that the 'Equipment ID' begins with "AP106", and that "THERMOCOUPLE TREE" should be somewhere in the 'Equipment Description' field. Based on this, a reasonable search could resemble the following...</p>
+<img class="desktop-prtscr-img" src="img/find-equip/find-img4.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>This search will not return with the intended results; in fact it will return with <u>zero</u> results. The problem with this particular search is that "THERMOCOUPLE TREE" is not the full, identical value stored for equipment description in the database.</p>
+<img class="desktop-prtscr-img" src="img/find-equip/find-img5.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>As you can see in the image above...</p>
+<table><tr><td><p>PRIMARY TANK THERMOCOUPLE TREE; 414” (412)(PERM INST T/C PROBS 412 IN)</p></td></tr></table><br>
+<p>...is the value stored for the equipment description in its entirety. Being able to memorize these entire descriptions would be impractical. This is where "wildcards" come in handy.</p>
+<br><br></div><hr class="clear-contentunit-pages" /><hr class="clear-contentunit-pages" /><div class="column1-unit-pages"><br><br>
+<h1>What is a Wildcard</h1>
+<p>A "wildcard" is a specific character on a keyboard that can be used to represent or replace one or more characters when performing a search. In this particular application, the "wildcards" used are the percent sign ( <b>%</b> ) and the underscore ( <b>_</b> ). The percent sign can be used to represent zero, one or multiple characters, and the underscore can only be used to represent only a single character.</p>
+<table cellspacing="0" cellpadding="0"><tr><th><h2>Wildcards</h2></th><th><h2>Description</h2></th></tr><tr><td><p>The percent sign (%)</p></td><td><p>Matches one or more characters</p></td></tr><tr><td><p>The underscore (_)</p></td><td><p>Matches one character</p></td></tr></table>   <!--  table is used for visual representation of 'wildcards' -->
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p class="hangingindent"><i>Note: I recommend solely using the percent sign because it can be used to serve the same functionality as the underscore, but it also provides the additional and far more frequent functionality of representing multiple characters.</i></p>
+<br><br></div><hr class="clear-contentunit-pages" /><hr class="clear-contentunit-pages" /><div class="column1-unit-pages"><br><br>
+<h1>Using a Wildcard</h1>
+<p>Using the same equipment description from our example we will review both valid and invalid search parameters.</p>
+<table cellspacing="0" cellpadding="0"><tr><th><h2>Valid Inputs</h2></th><th><h2>Invalid Inputs</h2></th></tr><tr><td><p>%THERMOCOUPLE TREE%</p></td><td><p>THERMOCOUPLE TREE%</p></td></tr><tr><td><p>PRIMARY TANK THERMOCOUPLE%</p></td><td><p>PRIMARY TANK THERMOCOUPL_</p></td></tr><tr><td><p>_RIMARY TANK THERMOCOUPLE%</p></td><td><p>PRIMARY TANK THERMO_COUPLE%</p></td></tr><tr><td><p>PRIMARY TANK THERMO%COUPLE%</p></td><td><p>%PRIMARY%THERM%TANK%</p></td></tr><tr><td><p>%PRIMARY%THERM%</p></td><td>&nbsp;</td></tr><tr><td><p>________TANK THERMOCOUPLE%</p></td><td>&nbsp;</td></tr></table>
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>When in doubt, just put the percent sign on both sides of your input.</p>
+<p class="hangingindent"><i>Note: For reasons unknown, if your input begins at the first character of the intended search result then "wildcards" are not necessary. For instance, this input also returns the intended search results.</i></p>
+<table><tr><td><p>PRIMARY TANK THERMOCOUPLE</p></td></tr></table>
+<br><br></div><hr class="clear-contentunit-pages" /><hr class="clear-contentunit-pages" /><div class="column1-unit-pages"><br><br>
+<h1 id="additional-find">Additional <i>Find</i> Info</h1>
+<p>There are no required fields, or limits to how many fields in the <i>Find</i> form are used; you can use only one field, all fields, or even no fields when performing a search. As mentioned before, all searchable equipment records, which are ultimately stored in the database, solely use capital letters so make sure all of your input is <b>CAPITALIZED</b>.</p>
+<p>If the equipment you are searching for is operational and currently in use, then make sure the 'Status' field value is "=0". If the equipment is inactive then make sure the 'Status' field value is "=1". This can be accomplished be manually entering the value into the 'Status' field, or by simply selecting "Active" or "Inactive" from the dropdown menu.</p>
+<img class="desktop-prtscr-img" src="img/find-equip/find-img6.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>Be careful how many "spaces" are used in your input. Unlike most search engines, additional spaces between words are <u><b>NOT</u></b> ignored. This means that if your input has an extra 'space', i.e. 2 or more spaces, between words you will return undesired results. Something else you should be aware of is that, for whatever reason, if a character in the middle of your input are deleted, then that index will automatically be replaced with a "space". Let’s say you’ve entered the following in the 'Equipment ID' field.</p>
+<img class="desktop-prtscr-img" src="img/find-equip/find-img8.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>But then you realize the equipment is actually in tank farm 'A' so you try to simply erase the letter 'Z'. If you erase the 'Z', then you will get the following input.</p>
+<img class="desktop-prtscr-img" src="img/find-equip/find-img9.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>You will find that removing these unwanted 'spaces' will prove much more difficult and time consuming then simply erasing the input and reentering it. If you have type an extra character, then, beginning with the last character, just 'backspace' until the unwanted character has been removed.</p>
+<p>The <i>Build Query</i> button located at the bottom of the form will load the <i>Query</i> tool, which can also accessed by simply selecting the <i>Query</i> tab at the top of the form. A third option is to load the <i>Query</i> tool by "clicking" the <i>Build Query</i> icon near the top-left corner of the window.</p>
+<img class="desktop-prtscr-img" src="img/find-equip/find-img7.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>Queries provide a more robust and precise method to perform searches. Queries will be discussed in detail in the following <i>Query Equipment</i> section of this tutorial.</p>
+<br><br></div><hr class="clear-contentunit-pages" /><hr class="clear-contentunit-pages" /><div class="column1-unit-pages"><br><br>
+<h1 id="using-query">Using <i>Query</i> Tool</h1>
+<p>Submitting a database query is undoubtedly the most complex feature of the eRounds System. To understand how to use a database query you will first need a brief overview of what a query and a database are.</p>
+<h2>What is a Database</h2>
+<p>A database, in its most basic characterization, is collection of information that is organized in a way that makes it easy to access, manage and update. All data, whether it is text, images, video or some other file, must be stored somewhere. On a personal computer a file would be stored on your hard drive and accessed by your operating system (i.e. Windows) when you "open" the file. Similar in purpose, a database is held on a hard drive on one or more computers but has the additional purpose of being accessed by many computers over a network connection.</p>
+<h2>What is a Query</h2>
+<p>All websites and their text, images and their other files associated with the website are stored in a database. The way this information can be stored, viewed, and modified is through "querying" their respective database. A query is a request from, or a modification to a database in a language that a computer understands. For your purposes you will only need a very minor comprehension of queries. If you would like to learn more, then you can visit <a href="http://www.w3schools.com/sql/ " target="_blank"><i>w3schools.com</i></a> for a comprehensive SQL tutorial.</p>
+<p>There are several reasons why creating your own query might be useful when searching for equipment in <i>eSOMS</i>. A query provides an absolute level of precision and control when conducting a search. It allows you to narrow your search results dramatically by choosing what keywords are included and excluded from the search, and it can allow you to get search results with multiple conditions considered.</p>
+<br><br></div><hr class="clear-contentunit-pages" /><hr class="clear-contentunit-pages" /><div class="column1-unit-pages"><br><br>
+<h1 id="OR-operator">The <i>OR</i> Operator</h1>
+<p>let’s say we are searching for the "intake filter pressure differentials" from both tank number '106' and tank number '107' that are both located in tank farm 'AN'. Using the <i>Find</i> example from the previous section, we submit the following search:</p>
+<img class="desktop-prtscr-img" src="img/find-equip/find-img1.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p class="hangingindent"><i>Note: If you are not familiar the "wildcard" notation, i.e. '%' and '_' symbols, which are used for both "Search" tools in this application, please review the <a href='search-equip#wildcard-notation'><i>Wildcard Notation</i></a> section of the tutorial.</i></p>
+<p>Using a reasonable search with %AN% in the 'Farm' field, the 'Status' field set to "Active", and a keyword %PRESSURE% in the 'Equipment Description' field, we return close to '100' results. This may not seem like a big issue for you, but there is more effective way to conduct this search and return more relevant results.</p>
+<p>After an equipment search has been conducted using the <i>Find</i> method, the equivalent query is automatically displayed in the field under the 'Query' tab. This query is automatically stored after submitting a <i>Find</i> search with the above conditions:</p>
+<img class="desktop-prtscr-img" src="img/find-equip/query-img1.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>What is important to understand is the relationship between the two methods. All the inputs from the <i>Find</i> method are accounted for in the query. The differences between the two are essentially only the variance in field names, i.e. 'Equipment Description' is used in the 'Find' tool while 'equip_description' represents the same data in the 'Query' field. The database actually stores the equipment description information using the latter of the two field names while the name "Equipment Description" from the <i>Find</i> tool is only meant to be read by humans so it is displayed in a way that’s easy to understand, in plain English.</p>
+<img class="desktop-prtscr-img" src="img/find-equip/query-img2.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>For your purposes, you will not need to fully comprehend the structure of database queries to use them. You can simply "cut/paste" pieces of the automatically stored queries, and then replace the keyword which will always be denoted by single quotes.</p>
+<p>Let’s improve the results from the original search. First we need to ask ourselves, "What do we know?" Well, we know the tank numbers for the "intake filter pressure differentials" that we are concerned with, and we know that, by convention, tank numbers are included in the equipment description.</p>
+<p>The 'AND' command at the beginning of a query signifies that an additional condition will follow, and that condition must also be met by the query. If we want the current search but applied only to tank '106' and tank '107', then we would logically need to add an additional condition. So let’s "cut/paste" the line of the query which begins with the 'AND' and includes the 'equip_description' identifier. We can then replace the %PRESSURE% on this newly created copy with %106%.</p>
+<img class="desktop-prtscr-img" src="img/find-equip/query-img3.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>It may seem intuitive to simply "cut/paste" an additional line and, again, replace the keyword with %107% and we’re done, but there is a modification that we must first make, and it may be a difficult step to comprehend. If we simply "paste" another copy of the same line and replace the keyword with %107% you would find that the query returns zero results.</p>
+<img class="desktop-prtscr-img" src="img/find-equip/query-img4.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>The reason for this is because the query is literally looking for pieces of equipment which have both %106% and %107% in their descriptions. There are <u><b>NO</u></b> pieces of equipment that have both of those keywords in their description. What we are really looking for are pieces of equipment which have either %106% <i>OR</i> %107% in their descriptions. We need one or the other, but not both.</p>
+<p>To do this we need to use an 'OR' statement opposed to the 'AND' statement. Let’s add an 'OR' statement between the two segments.</p>
+<img class="desktop-prtscr-img" src="img/find-equip/query-img5.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>This is the correct way to submit the query. This query returns less than 10 pieces of equipment; all of which are located in tank farm 'AN', are all currently "active", that all have the word "PRESSURE" in their descriptions, and which are all part of tank '106' or tank '107'.</p>
+<br><br></div><hr class="clear-contentunit-pages" /><hr class="clear-contentunit-pages" /><div class="column1-unit-pages"><br><br>
+<h1>Statement Precedence</h1>
+<p>It is important to note the additional set of parenthesis from the previous example.</p>
+<img class="desktop-prtscr-img" src="img/find-equip/query-img9.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>Without going into too much depth, these are used to modify the order in which the conditions are met. As an example, let’s say you wanted a cheeseburger and either a <i>Coke</i> or a <i>Pepsi</i>. Written down in a form similar to a query, it might look like this:</p>
+<table><tr><td><p>Cheeseburger</p></td></tr><tr><td><p>AND Coke</p></td></tr><tr><td><p>OR Pepsi</p></td></tr></td></tr></table><br>
+<p>This statement is ambiguous though; there are unintended ways that the statement can be interpreted. A cheeseburger and a <i>Coke</i> could satisfy this statement, but so could only getting a <i>Pepsi</i>. By using parenthesis, you could rewrite this statement as to be more clear:</p>
+<table><tr><td><p>Cheeseburger</p></td></tr><tr><td><p>AND ( Coke OR Pepsi )</p></td></tr></table><br>
+<p>This statement makes it clear that the "Coke OR Pepsi" statement must be evaluated separate from the 'AND'. This is the same notation that must be used in your queries in order for the computer to evaluate the statement inside the parenthesis prior to evaluating any other statements. For your purposes, including an 'OR' conjunction in a query is the only foreseeable reason that additional parenthesis would be needed.</p>
+<br><br></div><hr class="clear-contentunit-pages" /><hr class="clear-contentunit-pages" /><div class="column1-unit-pages"><br><br>
+<h1 id="NOT-condition">The <i>NOT</i> Condition</h1>
+<p>Another advantage to building a query is the ability to exclude keywords. Let’s say you are searching for the equipment ID of an "active" sensor that is located in tank farm 'AN'. You know that the sensor is referred to as an "indicator" by its description, and you know that it is <u>not</u> a pressure sensor. Using the <i>Find</i> search tool we submit the following:</p>
+<img class="desktop-prtscr-img" src="img/find-equip/find-img2.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>Using this reasonable search with %AN% in the 'Farm' field, the 'Status' field set to "Active", and a keyword %INDICATOR% in the 'Equipment Description' field, we return close to 70 results. As we did above we can click on the <i>Query</i> tab to view the automatically stored query which produced these results.</p>
+<img class="desktop-prtscr-img" src="img/find-equip/query-img6.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>Again, we can build a much more effective query to narrow our results. Similarly to before, we will "cut/paste" the second line of stored query to directly below the original, and then replace the keyword %INDICATOR% from the copy with %PRESSURE%. It should resemble the following:</p>
+<img class="desktop-prtscr-img" src="img/find-equip/query-img7.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>This doesn’t quite narrow our results enough though. We know the sensor is not a pressure sensor, thus should <u>not</u> contain the word pressure in its equipment description. To exclude words from a query we simply add the keyword 'NOT' prior to the occurrence of the 'LIKE' command.</p>
+<img class="desktop-prtscr-img" src="img/find-equip/query-img8.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>This query produces our desired results. This simple method of adding a 'NOT' statement to a query is the way to exclude words or phrases from a field in an equipment search. There are approximately 20 results returned from this query which all fit nicely on a single page.</p>
+<p class="hangingindent"><i>Note: For your purpose, the other commands included in the query structure, i.e. 'UPPER', and 'WHERE', should not be altered.</i></p>
+<br></div>
+<br></div>

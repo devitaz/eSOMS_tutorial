@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- HEAD -->
+<head>
+
+<title>eSOMS Tutorial</title>
+<meta name="viewport" http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="icon" type="image/x-icon" href="img/favicon.png">
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
+
+<!-- CSS -->
+<link rel="stylesheet" id="font-awesome-css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" type="text/css" media="screen">
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+<!-- JavaScript -->
+<script language="JavaScript" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script type="text/javascript" src="javascript/bootstrap.js"></script> 
+<script type="text/javascript" src="/../server.js"></script>
+
+</head>
+<body>
+
+<!-- LOAD SCREEN -->
+{{#if initialLoad}}
+  {{> preload-screen}}
+{{/if}}
+
+<!-- ACRONYM TABLE -->
+{{> acronym-table}}
+
+<div class="page-container">
+  <!-- A. HEADER -->
+  <div class="header">
+	
+	{{> header-top}}
+
+	{{#if showHeader}}
+	  <div class="header-middle" id="slide"></div>
+	{{else}}
+	
+	{{/if}}
+
+	{{> header-bottom}}
+	
+  </div>
+  <!-- B. MAIN -->
+  <div class="main">
+
+	<!-- B.1 MAIN NAVIGATION -->
+    {{> main-navigation}}
+	
+    <!-- B.2 MAIN CONTENT -->
+	{{{body}}}
+	
+	<!-- B.3 MAIN SUBCONTENT &/|| PREV/NEXT PAGE BUTTONS -->
+	{{#if isHome}}
+	  {{> sub-content }}
+	  {{> nav-buttons-home next-href=nextPage}}
+	{{else if isLastPage}}
+	  {{> nav-buttons-last prev-href=prevPage}}
+	{{else}}
+	  {{> nav-buttons prev-href=prevPage next-href=nextPage}}
+	{{/if}}
+	
+  </div>
+  
+  <!-- C. FOOTER -->
+  {{> footer}}
+
+</div>  
+
+<!-- JUMPTO BUTTON -->
+{{#unless noButton}}
+  {{> jumptotop-button}}
+{{/unless}}
+
+<script type="text/javascript" src="/javascript/client.js"></script>
+
+</body>
+</html>

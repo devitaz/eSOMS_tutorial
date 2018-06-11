@@ -1,0 +1,125 @@
+<div class="main-content-pages">
+<h1 class="pagetitle">Manage Users/Groups</h1>
+<br><br><div class="column1-unit-pages">
+<h1>Introduction</h1>
+<p>Privileges govern the rights of user and group accounts to perform the various operations of the <i>eSOMS</i> system. Some of these privileges are controlled at an individual specific level, hence “user” rights, and the others are controlled at a level which is determined by position, hence “group” rights. It is important to understand how to manage these groups. Follow the steps below to learn how to manage both the “User” rights and the “Group” rights.</p>
+<h1 id="manage-users">Manage Users</h1>
+<p>If you need to change a user’s personal information in <i>eSOMS</i>, view their current <i>eSOMS</i> security rights, change their group membership, or change someone’s password, it must be done in the <i>Manage Users</i> interface. To access the <i>Manage Users</i> interface you will need to select it from the <i>Administration</i> dropdown menu.</p>
+<img class="desktop-prtscr-img" src="img/manage-rights/manage-users-img1.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>To manage a user-specific settings you must first search for the specific user using either the <i>Find</i> tool or the <i>Query</i> tool. The <i>Find</i> tool is relatively intuitive and similar to search engines you might find on any other website. There are a few features unique to this search tool that are covered in depth in the <a target="_blank" href='search-equip#using-find'><i>Using Find Tool</i></a> and, more specifically, the <a target="_blank" href='search-equip#wildcard-notation'><i>Wildcard Notation</i></a> sections of the tutorial. The <i>Query</i> tool will likely be a completely foreign search feature, and it is covered in the <a target="_blank" href='search-equip#using-query'><i>Using Query Tool</i></a> section of the tutorial.</p>
+<p>The <i>Query</i> tool and the wildcard notation used in <i>Find</i> searches are more relevant for searching for equipment records and will be covered in later sections of the tutorial. For the purpose of finding a user it is recommended to either input the user’s full ID in the ‘User ID’ field or just input their last name in the ‘Name’ field.</p>
+<img class="desktop-prtscr-img" src="img/manage-rights/manage-users-img2.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p class="hangingindent"><i>Note: The input is not “case-sensitive”, i.e. it doesn’t matter if the input has capitalized characters or not.</i></p>
+<p>After “clicking” the <i>Find</i> button you will be taken to the <i>Results</i> tab where you can select the correct user.</p>
+<p>After the appropriate user is selected, you will be taken to the <i>User</i> tab where the main portion of the window is comprised of 4 sections; a <i>User Identification</i> section, a <i>Facility Membership</i> section, a <i>Group Membership</i> section, and a <i>Effective Security Rights</i> section.</p>
+<img class="desktop-prtscr-img" src="img/manage-rights/manage-users-img3.png" alt="" />
+<br><br></div><hr class="clear-contentunit-pages" /><hr class="clear-contentunit-pages" /><div class="column1-unit-pages"><br><br>
+<h1 id="user-ident">User Identification</h1>
+<p>The <i>User Identification</i> form is very straight forward. It contains the individual’s personal information, i.e. user ID, name, job title, department, etc.</p>
+<img class="desktop-prtscr-img" src="img/manage-rights/user-ident-form.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>To change the user’s personal information in <i>eSOMS</i> you can simply delete the existing input, and then enter a new value in the field. As always, make sure you “click” the <i>Save</i> icon to ensure the changes are permanent.</p>
+<p>The only “required” fields are the ‘Login ID’, ‘Name’, and selecting a department from the ‘Department’ dropdown, but it is important to also include the user’s email address for “Change Log” information and contact purposes. The ‘Title’ field should also be filled, and the ‘User ID’ field should have an identical value as the ‘Login ID’; though it seems redundant the two separate fields are used for different database queries. </p>
+<p>The ‘Active’ checkbox simply means that the user still has security rights at some level in the <i>eSOMS</i> system. The ‘Expiration’ is only applicable if the last date that an employee will need security rights in <i>eSOMS</i> is known, i.e. employee is changing departments, employee is quitting on a specified date.</p>
+<br><br></div><hr class="clear-contentunit-pages" /><hr class="clear-contentunit-pages" /><div class="column1-unit-pages"><br><br>
+<h1>Facility Membership</h1>
+<p>The <i>Facility Membership</i> form currently only has one option. <i>WRPS</i> is currently the only facility on site. This option could potentially be used in the future if the site ever moved to a multi-facility structure, but, for the time being, just ensure that <i>WRPS</i> is added as the facility, and that the ‘DefaultSite’ checkbox is “checked”.</p>
+<img class="desktop-prtscr-img" src="img/manage-rights/facility-member-form.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>If the <i>WRPS</i> option is not present in the <i>Facility Membership</i> form, and a message stating, “No records to display” is showing, then simply “click” the <i>Add</i> button, and then “check” the ‘DefaultSite’ checkbox.</p>
+<br><br></div><hr class="clear-contentunit-pages" /><hr class="clear-contentunit-pages" /><div class="column1-unit-pages"><br><br>
+<h1>Group Membership</h1>
+<p>The <i>Group Membership</i> form can be used to select one or more of “user groups” from the list. Each “group” is associated with a specific, and unique, set of privileges, or rights. How to view the specific rights of each “group”, and how to modify the rights of an existing group will be discussed in the <a href='manage-rights#manage-groups'><i>Manage Groups</i></a> section of the tutorial.</p>
+<img class="desktop-prtscr-img" src="img/manage-rights/group-member-form.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>To grant the rights of a specific group to a user, simply “check” the box corresponding to the appropriate group. “Uncheck” a box to remove the rights associated with a specific group.</p>
+<p class="hangingindent"><i>Note: If a checkbox is gray, then it means you do not possess the appropriate privileges to grant membership to that group.</i></p>
+<br><br></div><hr class="clear-contentunit-pages" /><hr class="clear-contentunit-pages" /><div class="column1-unit-pages"><br><br>
+<h1>Effective Security Rights</h1>
+<p>The <i>Effective Security Rights</i> form lists all of the rights associated with the selected user. The rights cannot be modified here, only viewed. Rights are modified at a “group” level and never at an individual level. How to modify the rights of an existing group will be discussed in the <a href='manage-rights#manage-groups'><i>Manage Groups</i></a> section of the tutorial.</p>
+<p>The <i>Module</i> column can contain “Equipment”, “Administration”, and “Operator Rounds”, which correspond to the interface’s dropdown menus. It will also contain a value for each individual tour that the user has rights pertaining to. If there is a right which governs the usage of any action associated with one of <i>eSOMS</i> primary dropdown menu items, then it would be listed as a module name matching the menu item.</p>
+<p>Each right associated with these “modules” is listed in the <i>Rights</i> column. The following image will show the <i>Effective Security Rights</i> form of the <i>Modify User</i> tool and its association with the <i>eSOMS</i> interface dropdown menu.</p>
+<img class="desktop-prtscr-img" src="img/manage-rights/effective-rights-form.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p class="hangingindent"><i>Note: The search field for this form only searches the current page and is equivalent to a “Ctrl-F” search. It is more effective to just manually navigate to the desired “module” name and look for the desired right.</i></p>
+<br><br></div><hr class="clear-contentunit-pages" /><hr class="clear-contentunit-pages" /><div class="column1-unit-pages"><br><br>
+<h1 id="add-user">Add User</h1>
+<p>A very commonly used function of the <i>Manage Users</i> tool is to add or remove a user. Any time a new employee is hired, leaves, or moves to another department there becomes a need to add or remove a user from the system. To do this you must first be in the <i>Users</i> tab as shown in the following image. You will notice when you select the <i>Users</i> tab that several new icons appear in the toolbar. </p>
+<img class="desktop-prtscr-img" src="img/manage-rights/manage-users-img4.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>To add a new user “click” on the <i>Add new user</i> icon from the toolbar. The fields in the <i>User Identification</i> form should be filled out appropriately. You can refer to the previous sections on this page for information regarding the different fields. The “required” fields are highlighted in yellow and must be filled out in order to store the user’s profile. The ‘User ID’ field and the ‘Login Id’ field both contain the same value.</p>
+<p>For a description and a list of the additional fields which are necessary to include, please refer to the <a href='manage-rights#user-ident'><i>User Identification</i></a> section of the tutorial.</p>
+<p class="hangingindent"><i>Note: The only password requirements are that there is a minimum of 6 characters, and there is at least 1 letter and 1 number included.</i></p>
+<p>Before you can make a selection from the ‘Department’ dropdown menu or select a <i>Group Membership</i> option you must first save the profile with the yellow highlighted fields filled. So when the same fields as shown in the following image are filled, “click” the <i>Save</i> icon near the top left corner of the window.</p>
+<img class="desktop-prtscr-img" src="img/manage-rights/manage-users-img6.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>Now you can select the department from the dropdown menu, as well as, select the appropriate “group” from the <i>Group Membership</i> form. Ensure that <i>WRPS</i> is still visible in the <i>Facility Membership</i> form, and that the ‘Default’ checkbox is “checked”.</p>
+<p>That is it, the user’s profile has been successfully setup in <i>eSOMS</i> with their appropriate rights.</p>
+<h1 id="remove-user">Remove User</h1>
+<p>Removing a user requires using the <i>Search</i> tab to find the user, and that is explained in the <a href='manage-rights#manage-users'><i>Manage Users</i></a> section of the tutorial. Once the user has been selected the <i>Users</i> tab, including the specified user’s profile information, should automatically be loaded onto the interface. Once present, simply click the <i>Delete user</i> icon shown in the following image.</p>
+<img class="desktop-prtscr-img" src="img/manage-rights/manage-users-img5.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>That is it, the user’s <i>eSOMS</i> profile has been removed.</p>
+<h1 id="change-passwords">Change Passwords</h1>
+<p>If a password needs to be changed, whether it is your own password or someone else’s password, the <i>Manage Users</i> interface is where this is done.</p>
+<p>To change your personal password you must have the <i>Users</i> tab open. For changing a personal password it doesn’t matter whose profile, if any, is present in the <i>Users</i> tab. You simply “click” on the <i>Change my password</i> icon denoted by the “single” key in the toolbar.</p>
+<img class="desktop-prtscr-img" src="img/manage-rights/manage-users-img7.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>You will then be prompted for your current password, and the new password. Input the required fields and “click” <i>OK</i>, then your password will have changed.</p>
+<p>To change another user’s password you must use the <i>Search</i> tab to find the user. This was explained in the <a href='manage-rights#manage-users'><i>Manage Users</i></a> section of the tutorial. Once the user has been selected the <i>Users</i> tab, including the specified user’s profile information, should automatically be loaded onto the interface.</p>
+<p>Now you can simply “click” on the <i>Change selected user’s password</i> icon denoted by the “pair” of keys in the toolbar.</p>
+<img class="desktop-prtscr-img" src="img/manage-rights/manage-users-img8.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>Again, you will then be prompted for the user’s current password, and the user’s new password. Input the required fields and “click” <i>OK</i>, then the user’s password will be changed.</p>
+<br><br></div><hr class="clear-contentunit-pages" /><hr class="clear-contentunit-pages" /><div class="column1-unit-pages"><br><br>
+<h1 id="manage-groups">Manage Groups</h1>
+<p>If a specific “group”, i.e. Group Administrator, Rounds Operator, Shift Manager, etc. needs an additional right or a specific right removed, or if a completely new “group” needs to be created, then it must be done at a “group” level from the <i>Manage Groups</i> interface. Follow the steps below to learn how to change “group” privileges and how to create an additional “group”.</p>
+<br><br></div><hr class="clear-contentunit-pages" /><hr class="clear-contentunit-pages" /><div class="column1-unit-pages"><br><br>
+<h1 id="add-remove-rights">Add/Remove Rights</h1>
+<p>To add or remove rights, to or from a group, you will need to select the <i>Manage Groups</i> option from the <i>Administration</i> dropdown menu. </p>
+<img class="desktop-prtscr-img" src="img/manage-rights/manage-groups-img1.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>When the interface loads there should be a table present where each row represents a “user group”. From here you must select which “group” you would like to add or remove rights from. In the example, <i>Group Administrator</i> has been selected  from the <i>User Group Name</i> column.</p>
+<img class="desktop-prtscr-img" src="img/manage-rights/manage-groups-img2.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>When the user group has been selected a new form will appear in the bottom half of the screen. This form allows you to view the <i>Available Rights</i> and the <i>Assigned Rights</i> for each individual ‘Module’. You can change the ‘Module’ using the dropdown menu, and, for each module, there will be a different set of rights.</p>
+<p>For the example, the right of approving updates to revisions for the ‘TF-OR-MR-AN’ tour to any <i>Group Administrator</i> will be granted. First, the correct ‘Module’ must be selected; in this case it will be a tour name. Then the appropriate right from the <i>Available Rights</i> list must be highlighted, and then the “single right arrow” icon must be "clicked". When the selected right has been moved to the <i>Assigned Rights</i> list and the progress has been saved, then the corresponding “group” will have that right.</p>
+<img class="desktop-prtscr-img" src="img/manage-rights/manage-groups-img3.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>To grant all available rights for this tour similarly select the desired tour from the ‘Module’ dropdown, but then “click” the “double right arrow” icon. This will transfer all rights from the list of <i>Available Rights</i> to the list of the <i>Assigned Rights</i> for the chosen module.</p>
+<img class="desktop-prtscr-img" src="img/manage-rights/manage-groups-img4.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>To remove a right you would essentially just do the opposite. You would highlight one or more rights from the list of <i>Assigned Rights</i>, and then “click” the “single left arrow” icon to move them to the list of <i>Available Rights</i>. Those rights would then be removed from that particular “group”.</p>
+<br><br></div><hr class="clear-contentunit-pages" /><hr class="clear-contentunit-pages" /><div class="column1-unit-pages"><br><br>
+<h1 id="create-group">Create Group</h1>
+<p>If you ever need a unique set of rights for a group of people or even a single individual, then it may be necessary to create a new group. This is a relatively simple procedure that must be done in the <i>Manage Group</i> interface.</p>
+<p>The first step is to simply “click” the <i>Add new group</i> icon from the toolbar, near the top left corner of the window.</p>
+<img class="desktop-prtscr-img" src="img/manage-rights/manage-groups-img5.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p>When the page has refreshed there should be an additional row appended to the bottom of the table, and it should be highlighted and contain no input. The column titled <i>User Group ID</i> is used for organizing data in the database, thus should be capitalized and should be named so that it is obvious which “group” it corresponds to. Fill in the field for the <i>User Group Name</i> field as well, and then make sure to “click” the <i>Save</i> icon from the toolbar.</p>
+<img class="desktop-prtscr-img" src="img/manage-rights/manage-groups-img6.png" alt="" />
+<br></div>
+<br><br><div class="column1-unit-pages">
+<p class="hangingindent"><i>Note: Because this action requires a database change, make sure to contact <a href="mailto:ERADM@rl.gov?subject=eSOMS system support"><i>eRounds Admin</i></a>. Attach a screenshot of this point, and explain the change.</i></p>
+<p>At this point the form containing the list of <i>Available Rights</i> and the <i>Assigned Rights</i> for each ‘Module’ should be present in the bottom half of the window. Simply add the desired rights for each module to the list of <i>Assigned Rights</i> to grant the privilege to your new group.</p>
+<p>If more detail is necessary for selecting the “group” privileges, please refer to the <a href='manage-rights#add-remove-rights'><i>Add/Remove Rights</i></a> section of the tutorial. After you have finished selecting the appropriate rights for each module, make sure to “click” the <i>Save</i> icon.</p>
+<br></div>
+<br></div>
